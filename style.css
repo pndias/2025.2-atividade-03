@@ -1,0 +1,61 @@
+/* Reset básico para remover margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Cor de fundo da página (cinza claro) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px; /* Largura máxima estilo 'cartão' */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Sombra suave */
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.link-list {
+    list-style: none; /* Remove as bolinhas da lista */
+}
+
+.link-list li {
+    margin-bottom: 15px;
+}
+
+.link-list a {
+    display: block; /* Faz o link ocupar a largura toda */
+    background-color: #007bff; /* Cor do botão (Azul) */
+    color: white;
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse */
+.link-list a:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    transform: translateY(-2px); /* Leve subida */
+}
